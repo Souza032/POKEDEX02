@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>POKEDEX</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>POKEDEX
+      </h1>
+      <span></span>
+    </header>
+
+
+<section class="dataPoke-list"> 
+  <div class="card">
+    <img class="image-dataPoke"  ${dataPoke.sprites.front_default}
+    alt="imagem " style="height: 200px"
+    
+     />
+    <div>
+        <h2 class="name-dataPoke">${dataPoke.name}</h2>
+        <p class="id-dataPoke">${dataPoke.id}</p>
+        <h4>tipo</h4>
+        <p class="tipo-dataPoke">${tipfinal.g.toUpperCase()} and ${tipfinal.h.toUpperCase()} </p>
+        <p class="tipo-dataPoke2">${tipfinal.g.toUpperCase()} and ${tipfinal.h.toUpperCase()} </p>
+        <h4>descrição</h4> 
+        <p class="tipo-dataPoke2"> Os principais golpes desse pokemom são  :</p>
+        <p class="gopi-dataPoke"> </p>
+        <p class="gopi-dataPoke2"> </p>
+
+    </div>
+</div>
+
+</section>
+<button id="more" onclick="viewMore()">Ver mais</button>
+    
+    
+
+<footer>
+  <p class="pfoo">
+    Todos os direitos resevados para
+    <a target="_blank" href="https://github.com/Souza032">GUSTAVO SOUZA</a>
+    &copy;
+  </p>
+  <p class="pfoo">
+    Dados retirados de
+    <a target="_blank" href="https://www.pokemon.com/br/pokedex/"
+      >Pokédex</a
+    >
+  </p>
+</footer>
+
+
+    <script src="./public/script.js"></script>
+  </body>
+</html>
